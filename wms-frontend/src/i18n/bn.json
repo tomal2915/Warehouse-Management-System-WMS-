@@ -1,0 +1,53 @@
+{
+  "common": {
+    "loading": "লোড হচ্ছে...",
+    "error": "একটি ত্রুটি ঘটেছে। দয়া করে পরে আবার চেষ্টা করুন।",
+    "noData": "কোন তথ্য পাওয়া যায়নি।",
+    "success": "অপারেশন সফলভাবে সম্পন্ন হয়েছে।",
+    "cancel": "বাতিল করুন"
+  },
+  "login": {
+    "title": "প্রবেশ করুন",
+    "username": "ব্যবহারকারীর নাম",
+    "password": "পাসওয়ার্ড",
+    "submit": "প্রবেশ করুন",
+    "forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?"
+  },
+  "dashboard": {
+    "welcomeMessage": "স্বাগতম, {{username}}!",
+    "statistics": {
+      "totalUsers": "মোট ব্যবহারকারী",
+      "activeSessions": "সক্রিয় সেশন",
+      "systemHealth": "সিস্টেম স্বাস্থ্য"
+    }
+  },
+  "settings": {
+    "title": "সেটিংস",
+    "language": "ভাষা",
+    "notifications": {
+      "enableNotifications": "নোটিফিকেশন সক্রিয় করুন"
+    }
+  },
+  "notFound": {
+    "title": "404 - পৃষ্ঠা পাওয়া যায়নি",
+    "description": "আপনি যে পৃষ্ঠাটি খুঁজছেন তা বিদ্যমান নয় বা সরানো হয়েছে।",
+    "suggestion": "দয়া করে URL চেক করুন বা হোমপেজে ফিরে যান।",
+    "goHome": "হোমপেজে যান"
+  },
+  "sidebar": {
+    "dashboard": "ড্যাশবোর্ড",
+    "inventory": "ইনভেন্টরি",
+    "viewInventory": "ইনভেন্টরি দেখুন",
+    "addItem": "আইটেম যোগ করুন",
+    "barcodePrint": "বারকোড প্রিন্ট",
+    "stockAlerts": "স্টক এলার্ট",
+    "analytics": "বিশ্লেষণ",
+    "forecast": "ফরকাস্ট",
+    "activityLog": "অ্যাক্টিভিটি লগ",
+    "admin": "প্রশাসন",
+    "reports": "রিপোর্ট",
+    "userManagement": "ব্যবহারকারী ব্যবস্থাপনা",
+    "settings": "সেটিংস"
+  },
+  "language": "ভাষা"
+}

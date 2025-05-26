@@ -1,0 +1,59 @@
+backend/
+├── wms/                             # Django project core
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py                  # Django settings with:
+│   │                                # - MongoDB (Djongo or PyMongo)
+│   │                                # - CORS, REST Framework, JWT, Channels
+│   ├── urls.py                      # Includes: inventory/, users/, ai/, chatbot/
+│   └── wsgi.py
+├── inventory/                       # Inventory & stock management
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py                    # Item, Category, Stock, Alert, Barcode, QRCode
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   └── tests.py
+├── users/                           # User auth & role management
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py                    # CustomUser (roles: Admin, Employee)
+│   ├── serializers.py
+│   ├── views.py                     # Login, Register, Profile
+│   ├── urls.py
+│   └── tests.py
+├── ai_forecast/                     # ML integration for demand forecasting
+│   ├── __init__.py
+│   ├── views.py                     # Handles API requests to/from ML model
+│   ├── urls.py
+│   └── utils.py                     # Pre/post-process forecast data
+├── chatbot/                         # OpenAI chatbot interface
+│   ├── __init__.py
+│   ├── views.py                     # Chat endpoint (using OpenAI API)
+│   ├── urls.py
+│   └── utils.py                     # Message formatting / history handling
+├── notifications/                   # Email/SMS alerting service
+│   ├── __init__.py
+│   ├── services.py                  # send_email(), send_sms()
+│   ├── views.py                     # Trigger notifications
+│   ├── urls.py
+│   └── templates/                   # email templates
+│       └── low_stock_alert.html
+├── utils/                           # Shared utilities
+│   ├── __init__.py
+│   ├── decorators.py                # Role-based permissions
+│   ├── permissions.py               # Custom DRF permissions
+│   └── validators.py
+├── static/                          # Static files (for admin, reports)
+├── media/                           # Uploaded files (barcodes, receipts)
+├── tests/                           # Centralized test cases
+│   ├── test_inventory.py
+│   ├── test_users.py
+│   └── test_chatbot.py
+├── manage.py
+├── requirements.txt                 # Python + ML dependencies (e.g., openai, numpy, pandas)
+├── Dockerfile                       # Backend Docker setup
+└── README.md                        # Backend API usage and setup

@@ -1,0 +1,56 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred. Please try again later.",
+    "success": "Operation completed successfully.",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign In",
+    "forgotPassword": "Forgot Password?"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {{name}}!"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "notifications": {
+      "enableNotifications": "Enable Notifications"
+    }
+  },
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "description": "The page you are looking for doesn't exist or has been moved.",
+    "suggestion": "Please check the URL or navigate back to the homepage.",
+    "goHome": "Go to Homepage"
+  },
+  
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "inventory": "Inventory",
+    "viewInventory": "View Inventory",
+    "addItem": "Add Item",
+    "barcodePrint": "Barcode Print",
+    "stockAlerts": "Stock Alerts",
+    "analytics": "Analytics",
+    "forecast": "Forecast",
+    "activityLog": "Activity Log",
+    "admin": "Administration",
+    "reports": "Reports",
+    "userManagement": "User Management",
+    "settings": "Settings"
+  },
+  "language": "Language"
+}

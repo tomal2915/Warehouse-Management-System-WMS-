@@ -1,0 +1,16 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+/* Make sure the drawer doesn't get covered by the app bar */
+.MuiDrawer-root {
+  z-index: 1200 !important;
+}

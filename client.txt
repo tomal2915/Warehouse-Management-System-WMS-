@@ -1,0 +1,98 @@
+wms-frontend/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   ├── manifest.json              # PWA manifest
+│   └── service-worker.js         # PWA Service Worker (with custom API cache strategy)
+├── src/
+│   ├── assets/
+│   │   └── logo.png
+│   ├── components/
+│   │   ├── auth/
+│   │   │   ├── LoginForm.jsx
+│   │   │   └── ProfileForm.jsx
+│   │   ├── layout/
+│   │   │   ├── NavBar.jsx                  # Includes language dropdown
+│   │   │   ├── Sidebar.jsx
+│   │   │   ├── ProtectedRoute.jsx
+│   │   │   └── RoleBasedAccess.jsx
+│   │   ├── settings/
+│   │   │   └── LanguageSelector.jsx        # Dynamic language preference component
+│   │   ├── ui/
+│   │   │   ├── ItemCard.jsx
+│   │   │   ├── AlertCard.jsx
+│   │   │   ├── DataTable.jsx
+│   │   │   ├── FormModal.jsx
+│   │   │   ├── QRCodeScanner.jsx
+│   │   │   ├── QRCodeGenerator.jsx
+│   │   │   ├── NotificationBell.jsx
+│   │   │   ├── PrintButton.jsx
+│   │   │   ├── ExportPDFButton.jsx
+│   │   │   ├── ExportCSVButton.jsx
+│   │   │   ├── ChartFilter.jsx
+│   │   │   └── RealTimeUpdater.jsx
+│   │   └── charts/
+│   │       ├── StockChart.jsx
+│   │       ├── AlertTrendChart.jsx
+│   │       ├── AnalyticsDashboard.jsx
+│   │       └── ForecastChart.jsx
+│   ├── i18n/
+│   │   ├── en.json
+│   │   ├── es.json
+│   │   └── i18n.js                       # i18next configuration
+│   ├── pages/
+│   │   ├── LoginPage.jsx
+│   │   ├── DashboardPage.jsx
+│   │   ├── InventoryPage.jsx
+│   │   ├── ItemDetailsPage.jsx
+│   │   ├── AddItemPage.jsx
+│   │   ├── StockAlertsPage.jsx
+│   │   ├── ReportsPage.jsx
+│   │   ├── UserManagementPage.jsx
+│   │   ├── ProfilePage.jsx              # Includes language setting
+│   │   ├── BarcodePrintPage.jsx
+│   │   ├── NotificationsPage.jsx
+│   │   ├── AnalyticsPage.jsx
+│   │   ├── ForecastPage.jsx
+│   │   ├── ActivityLogPage.jsx
+│   │   └── NotFoundPage.jsx
+│   ├── redux/
+│   │   ├── store.js
+│   │   ├── slices/
+│   │   │   ├── authSlice.js
+│   │   │   ├── inventorySlice.js
+│   │   │   ├── alertsSlice.js
+│   │   │   ├── userSlice.js
+│   │   │   ├── reportSlice.js
+│   │   │   ├── notificationSlice.js
+│   │   │   ├── analyticsSlice.js
+│   │   │   ├── activityLogSlice.js
+│   │   │   ├── forecastSlice.js
+│   │   │   └── settingsSlice.js          # For dynamic language and preferences
+│   ├── services/
+│   │   ├── api.js                        # Main API functions
+│   │   ├── apiCache.js                  # API custom cache strategy
+│   │   ├── socket.js
+│   │   ├── emailService.js
+│   │   ├── smsService.js
+│   │   └── aiForecastService.js
+│   ├── styles/
+│   │   └── theme.js
+│   ├── tests/
+│   │   ├── LoginForm.test.jsx
+│   │   ├── InventoryPage.test.jsx
+│   │   └── App.test.jsx
+│   ├── App.jsx
+│   ├── index.jsx
+│   ├── index.css
+│   └── serviceWorkerRegistration.js      # PWA registration script
+├── .env
+├── .gitignore
+├── Dockerfile
+├── nginx.conf
+├── vercel.json
+├── netlify.toml
+├── jest.config.js
+├── tailwind.config.js
+├── package.json
+└── README.md
